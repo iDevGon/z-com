@@ -10,7 +10,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'",
-    "prepare": "husky",
+    "prepare": "husky && panda codegen",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@pandacss/dev": "^0.46.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
